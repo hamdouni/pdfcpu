@@ -21,8 +21,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
+	"github.com/hamdouni/pdfcpu/pkg/log"
+	"github.com/hamdouni/pdfcpu/pkg/pdfcpu"
 )
 
 // Collect creates a custom PDF page sequence for selected pages of rs and writes the result to w.

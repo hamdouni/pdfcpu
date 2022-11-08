@@ -22,8 +22,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pdfcpu/pdfcpu/pkg/api"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
+	"github.com/hamdouni/pdfcpu/pkg/api"
+	"github.com/hamdouni/pdfcpu/pkg/pdfcpu"
 )
 
 func TestAlternatingPageNumbersViaWatermarkMap(t *testing.T) {

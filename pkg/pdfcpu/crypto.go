@@ -33,7 +33,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
+	"github.com/hamdouni/pdfcpu/pkg/log"
 	"github.com/pkg/errors"
 )
 

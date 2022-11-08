@@ -14,7 +14,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/pdfcpu/pdfcpu/pkg/api"
+	"github.com/hamdouni/pdfcpu/pkg/api"
 )
 
 func main() {

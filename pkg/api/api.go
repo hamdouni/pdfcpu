@@ -17,18 +17,20 @@
 // Package api lets you integrate pdfcpu's operations into your Go backend.
 //
 // There are two api layers supporting all pdfcpu operations:
-//  1) The file based layer (used by pdfcpu's cli)
-//  2) The io.ReadSeeker/io.Writer based layer for backend integration.
+//  1. The file based layer (used by pdfcpu's cli)
+//  2. The io.ReadSeeker/io.Writer based layer for backend integration.
 //
 // For any pdfcpu command there are two functions.
 //
 // The file based function always calls the io.ReadSeeker/io.Writer based function:
-//  func CommandFile(inFile, outFile string, conf *pdf.Configuration) error
-//  func Command(rs io.ReadSeeker, w io.Writer, conf *pdf.Configuration) error
+//
+//	func CommandFile(inFile, outFile string, conf *pdf.Configuration) error
+//	func Command(rs io.ReadSeeker, w io.Writer, conf *pdf.Configuration) error
 //
 // eg. for optimization:
-//  func OptimizeFile(inFile, outFile string, conf *pdf.Configuration) error
-//  func Optimize(rs io.ReadSeeker, w io.Writer, conf *pdf.Configuration) error
+//
+//	func OptimizeFile(inFile, outFile string, conf *pdf.Configuration) error
+//	func Optimize(rs io.ReadSeeker, w io.Writer, conf *pdf.Configuration) error
 package api
 
 import (
@@ -37,10 +39,10 @@ import (
 	"os"
 	"time"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
+	"github.com/hamdouni/pdfcpu/pkg/log"
+	"github.com/hamdouni/pdfcpu/pkg/pdfcpu"
 
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/validate"
+	"github.com/hamdouni/pdfcpu/pkg/pdfcpu/validate"
 )
 
 // ReadContext uses an io.ReadSeeker to build an internal structure holding its cross reference table aka the Context.

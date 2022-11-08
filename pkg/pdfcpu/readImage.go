@@ -29,7 +29,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/pdfcpu/pdfcpu/pkg/filter"
+	"github.com/hamdouni/pdfcpu/pkg/filter"
 	"github.com/pkg/errors"
 	_ "golang.org/x/image/webp"
 )

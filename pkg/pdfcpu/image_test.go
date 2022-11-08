@@ -27,7 +27,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pdfcpu/pdfcpu/pkg/filter"
+	"github.com/hamdouni/pdfcpu/pkg/filter"
 	"github.com/pkg/errors"
 )
 

@@ -4,8 +4,8 @@
 FROM golang:latest as builder
 
 # install
-RUN go get github.com/pdfcpu/pdfcpu/cmd/...
-WORKDIR $GOPATH/src/github.com/pdfcpu/pdfcpu/cmd/pdfcpu
+RUN go get github.com/hamdouni/pdfcpu/cmd/...
+WORKDIR $GOPATH/src/github.com/hamdouni/pdfcpu/cmd/pdfcpu
 RUN CGO_ENABLED=0 GOOS=linux go build -a -o pdfcpu .
 
 ######## Start a new stage from scratch #######
@@ -17,7 +17,7 @@ RUN apk --no-cache add ca-certificates
 WORKDIR /root/
 
 # Copy the Pre-built binary file from the previous stage
-COPY --from=builder /go/src/github.com/pdfcpu/pdfcpu/cmd/pdfcpu .
+COPY --from=builder /go/src/github.com/hamdouni/pdfcpu/cmd/pdfcpu .
 
 # Command to run the executable
 CMD ["./pdfcpu"]

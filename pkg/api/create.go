@@ -19,7 +19,7 @@ package api
 import (
 	"os"
 
-	pdf "github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
+	pdf "github.com/hamdouni/pdfcpu/pkg/pdfcpu"
 )
 
 // CreatePDFFile creates a PDF file for an xRefTable and writes it to outFile.

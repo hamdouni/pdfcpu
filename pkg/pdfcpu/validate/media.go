@@ -16,7 +16,7 @@ limitations under the License.
 
 package validate
 
-import pdf "github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
+import pdf "github.com/hamdouni/pdfcpu/pkg/pdfcpu"
 
 func validateMinimumBitDepthDict(xRefTable *pdf.XRefTable, d pdf.Dict, sinceVersion pdf.Version) error {
 
