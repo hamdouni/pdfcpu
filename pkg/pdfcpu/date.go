@@ -125,6 +125,11 @@ func parseTimezone(s string) (h, m int, ok bool) {
 		return tzh, 0, true
 	}
 
+	// truncate if extra chars after date
+	if len(s) >= 24 {
+		s = s[0:23]
+	}
+
 	if len(s) != 22 && len(s) != 23 {
 		return 0, 0, false
 	}
