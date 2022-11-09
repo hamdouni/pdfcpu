@@ -1,6 +1,6 @@
 module github.com/hamdouni/pdfcpu
 
-go 1.15
+go 1.19
 
 require (
 	github.com/hhrutter/lzw v0.0.0-20190829144645-6f07a24e8650
